@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
 public class DriveCar : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _frontTireRB;
@@ -24,4 +27,6 @@ public class DriveCar : MonoBehaviour
         _backTireRB.AddTorque(-_moveInput * _speed * Time.fixedDeltaTime);
         _carRb.AddTorque(_moveInput * _rotationSpeed * Time.fixedDeltaTime);
     }
+
+
 }
